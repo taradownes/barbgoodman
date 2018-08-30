@@ -1,0 +1,114 @@
+/* MAIN */
+
+body {
+  background-color: white;
+  font-family: "Raleway";
+  font-size: 16px;
+}
+
+.top {
+  background: rgb(14, 19, 35);
+  color: white;
+  font-family: "Montserrat";
+  font-size: 2rem;
+}
+
+.top ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.top h2 {
+    margin-bottom: 0;
+    /* padding-top: 140px; */
+}
+
+.top .image {
+  background: url("../images/chicago.jpg");
+  background-size: cover; 
+  background-position-y: 55%
+}
+
+.big{
+  font-size: 3rem;
+}
+
+.index {
+  height: 1500px;
+}
+
+
+/* NAV */
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  padding: 0 0.8rem;
+}
+
+.mr-auto {
+  justify-content: end;
+}
+
+
+/* INDEX PAGE */
+
+.header h1  {
+  color: white;
+  font-size: 5rem;
+}
+
+.header h3 {
+  font-size: 3rem;
+}
+
+.header {
+  background: url("../images/chicago.jpg") center;
+  /* background: rgb(14, 19, 35); */
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 2px 4px black;
+}
+.header .container {
+  margin: 0 auto;
+  text-align: center;
+  padding: 14% 2%;
+}
+
+
+
+/* CONTACT PAGE */
+
+.contact .info {
+  background: rgb(14, 19, 35);
+  color: white;
+
+}
+
+.contact .card {
+  color: black;
+}
+
+
+
+/* PHILOSOPHY PAGE */
+
+
+
+
+/* TEAM PAGE */
+
+
+
+
+/* FOOTER */
+.footer {
+  height: 80px;
+  background-color: #343a40;
+
+}
