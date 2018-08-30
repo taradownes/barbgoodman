@@ -6,47 +6,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./public/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Raleway|Montserrat" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Raleway" rel="stylesheet">
+
 </head>
 <body>
+
+{{!-------------- HEADING -------------}}
 
 <div class="container-fluid top">
   <div class="row">
     <div class="col-sm-5">
       <ul>
+        <li>Law Offices Of</li>
         <li>Barbara Goodman</li>
-        <li class="big">Law</li>
       </ul>
-          {{!-- <h2>Law Offices of Barbara Goodman</h2> --}}
     </div>
     <div class="col-sm-7 image">
     </div>
   </div>
 </div>
 
+{{!------------- NAVIGATION -----------}}
 
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mb-5">
+<nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
   <a class="navbar-brand" href="#"></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class=" collapse navbar-collapse menu" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="flex-fill navbar-nav mr-auto">
-      <li class="nav-item">
-        <a class="nav-link" href="#">Welcome <span class="sr-only">(current)</span></a>
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Welcome</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Our Team</a>
+        <a class="nav-link" href="/team">Our Team</a>
       <li class="nav-item">
-        <a class="nav-link" href="#">Philosphy</a>
+        <a class="nav-link" href="/services">Services</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="/contact">Contact</a>
       </li>
     </ul>
   </div>
 </nav>
+
+{{!------------- MAIN -----------}}
 
 <div class="container-fluid mb-5">
   <h2>Some Header for Contact Page!</h2>

@@ -21,8 +21,17 @@ app.get("/", function(req, res){
 });
 
 //MYTEAM
+app.get("/team", function(req, res){
+    res.render("team");
+});
 
-//SERVICES/PHILOSOPHY
+
+
+//SERVICES
+
+app.get("/services", function(req, res){
+    res.render("services");
+})
 
 //CONTACT
 app.get("/contact", function(req, res){
