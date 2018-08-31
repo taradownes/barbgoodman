@@ -1,16 +1,25 @@
-/* MAIN */
+/*---------------------- MAIN --------------------------*/
 
 body {
   background-color: white;
-  font-family: "Raleway";
+  font-family: "Quicksand";
   font-size: 16px;
 }
 
 .top {
   background: rgb(31, 40, 68);
   color: white;
-  font-size: 2.5rem;
+  font-size: 2.5rem; 
+}
+
+.raleway {
   font-family: "Raleway";
+  letter-spacing: 0.2rem;
+}
+.poiret{
+  letter-spacing: 0.25rem;
+  font-family: "Poiret One", "cursive";
+  font-weight: 500;
 }
 
 .top ul {
@@ -61,11 +70,11 @@ a {
 }
 
 
-/* INDEX PAGE */
+/*-------------------------- INDEX PAGE---------------------------- */
 
 .header h1  {
   color: white;
-  font-size: 5rem;
+  font-size: 5.2rem;
 }
 
 .header h3 {
@@ -87,6 +96,12 @@ a {
 
 .index {
   padding: 40px;
+  font-size: 1.1rem;
+}
+
+.index h1 {
+  padding: 30px 0;
+  font-size: 2.8rem;
 }
 
 .blue {
@@ -110,32 +125,84 @@ ul {
   background: rgb(245, 245, 245);
 }
 
+.testimonial h2 {
+  font-size: 2.5rem;
+}
 
-/* CONTACT PAGE */
+.testimonial p {
+  font-size: 1.3rem;
+}
+
+.author {
+  text-align: right;
+}
+
+
+/* ------------------------CONTACT PAGE --------------------------*/
 
 .contact .info {
   background: rgb(31, 40, 68);
   color: white;
+  padding: 50px 10px;
 
+}
+.info {
+  font-family: "Roboto";
+}
+
+.info ul {
+  padding: 0;
+  font-family: "Roboto";
+}
+.info li {
+  line-height: 2.0rem;
+  font-size: 1.2rem;
+}
+
+.info h3{
+  font-size: 2.0rem;
+  padding-bottom: 30px;
+}
+
+.info h4 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
 }
 
 .contact .card {
   color: black;
   margin-right: 20px;
+  padding: 30px;
+  font-family: "Roboto";
+}
+
+.contact h2 {
+  font-size: 2.8rem;
+  padding: 40px 0 0 0;
+}
+
+.card-title {
+  text-align: center;
+}
+
+/* ------------------------------SERVICES PAGE-------------------------- */
+
+.services{
+  padding: 50px 20px;
+}
+
+.services h1 {
+  font-size: 2.8rem;
 }
 
 
 
-/* PHILOSOPHY PAGE */
-
-
-
-
-/* TEAM PAGE */
+/*------------------------------ TEAM PAGE -----------------------------*/
 
 .team {
   padding: 90px 20px;
 }
+
 
 .teamtop {
   padding: 10px 20px 90px 20px; 
@@ -149,9 +216,15 @@ ul {
   padding: 40px 20px;
 }
 
+.padding h1 {
+  font-size: 2.8rem;
+}
 
 
-/* FOOTER */
+
+
+
+/*------------------------------ FOOTER -------------------------*/
 .footer {
   height: 80px;
   background-color: #343a40;

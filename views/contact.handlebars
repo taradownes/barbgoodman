@@ -6,8 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./public/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans|Raleway" rel="stylesheet">
-
+ <link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Raleway" rel="stylesheet"> 
 </head>
 <body>
 
@@ -16,7 +15,7 @@
 <div class="container-fluid top">
   <div class="row">
     <div class="col-sm-5">
-      <ul>
+      <ul class="poiret">
         <li>Law Offices Of</li>
         <li>Barbara Goodman</li>
       </ul>
@@ -35,8 +34,8 @@
   </button>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="flex-fill navbar-nav mr-auto">
-      <li class="nav-item active">
+    <ul class="flex-fill navbar-nav mr-auto raleway">
+      <li class="nav-item">
         <a class="nav-link" href="/">Welcome</a>
       </li>
       <li class="nav-item">
@@ -44,7 +43,7 @@
       <li class="nav-item">
         <a class="nav-link" href="/services">Services</a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="/contact">Contact</a>
       </li>
     </ul>
@@ -53,8 +52,8 @@
 
 {{!------------- MAIN -----------}}
 
-<div class="container-fluid mb-5">
-  <h2>Some Header for Contact Page!</h2>
+<div class="container-fluid mb-5 contact">
+  <h2 class="raleway">Need Legal Assistance?</h2>
 </div>
 
 <div class="container-fluid contact">
@@ -62,37 +61,42 @@
     <div class="col-md-4 info">
         <div class="container">
           <h3>Questions? </h3>
-          <h4>Contact Barbara Goodman!</h4>
-          <ul>
-            <li>Email: barb@barbgoodmanlaw.com</li>
-            <li>Phone: 111-333-4444</li>
-            <li>Address: 111 main st, Deerfield IL 60068</li>
+          <h4>Contact Barbara Goodman Law!</h4>
+          <ul class="card-list">
+            <li class="card-list-item">Email: </li>
+            <li>barb@barbgoodmanlaw.com</li><br>
+            <li>Phone:</li>
+            <li>111-333-4444</li><br>
+            <li>Address:</li>
+            <li>111 main st, Deerfield IL 60068</li>
           </ul>
         </div>
     </div>
     <div class="col-md-8">
-        <div class="container card">
+        <div class="container card mb-4">
           <h1 class="card-title">Contact Us</h1>
-          <form action="" method="" class="card-body">
-            <div class="form-group"> 
-              <label>First Name</label>
-              <input type="text" name="firstName" class="form-control" required>
-            </div>
-            <div class="form-group"> 
-              <label>Last Name</label>
-              <input type="text" name="lastName" class="form-control" required>
-            </div>
-            <div class="form-group"> 
-              <label>Email</label>
-              <input type="email" name="email" class="form-control" required>
-            </div>
-            <div class="form-group">
-              <label>Message</label>
-              <textarea name="message" cols="30" rows="10" class="form-control" required></textarea>
-            </div>
-            <div class="form-group">
-              <input type="submit" class="form-control" value="Submit" required>
-            </div>
+          <form action="/contact" method="POST" class="card-body">
+            <div class="row">
+                <div class="form-group col-sm-6"> 
+                  <label>First Name</label>
+                  <input type="text" name="firstName" class="form-control" required>
+                </div>
+                <div class="form-group col-sm-6"> 
+                  <label>Last Name</label>
+                  <input type="text" name="lastName" class="form-control" required>
+                </div>
+                <div class="form-group col-sm-12"> 
+                  <label>Email</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+                <div class="form-group col-sm-12">
+                  <label>Message</label>
+                  <textarea name="message" cols="30" rows="10" class="form-control" required></textarea>
+                </div>
+                <div class="form-group col-sm-12">
+                  <input type="submit" class="form-control" value="Submit">
+              </div>  
+            </div>  
           </form>
         </div>
     </div> 
