@@ -1,3 +1,166 @@
+/*------------------------ MEDIA ----------------------------*/
+
+@media screen and (max-width: 768px) {
+
+  .top {
+    font-size: 22px;
+  }
+
+  .top .image {
+    display: none;
+  }
+  
+  .top ul {
+    padding: 15px 0 0 0;
+  }
+
+  .header h1  {
+    color: white;
+    font-size: 2.2rem;
+  }
+  .header h3 {
+    font-size: 1.3rem;
+  }
+  .index h1 {
+    padding: 15px 0;
+    font-size: 1.4rem;
+  }
+  .index {
+    padding: 20px;
+    font-size: 0.9rem;
+  }
+  .testimonial h2 {
+    font-size: 1.4rem;
+  }
+  .testimonial p {
+    font-size: 0.9rem;
+  }
+  .blue li {
+    padding: 5px;
+    font-size: 0.9rem;
+  }
+  /* ---------CONTACT-------- */
+  .contact h2 {
+    font-size: 1.4rem;
+    padding: 10px 0 0 0;
+  }
+  .info li {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .info h3{
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+  }
+  
+  .info h4 {
+      font-size: 1rem;
+      padding-bottom: 15px;
+  }
+  .card label {
+    font-size: 0.9 !important;
+  }
+  .card h1 {
+    font-size: 1.4 !important;
+  }
+  /* ----TEAM----- */
+  .padding h1 {
+    font-size: 1.5rem;
+  }
+ .team p {
+  font-size: 0.9rem;
+}
+.teamtop p{
+  font-size: 0.9rem;
+}
+.team {
+  padding: 30px 10px;
+}
+.teamtop {
+  padding: 10px 10px 40px 10px; 
+}
+.padding {
+  padding: 20px 10px;
+}
+  
+}
+
+@media screen and (min-width: 768px) {
+
+.top {
+  font-size: 44px;
+}
+
+.top ul {
+  padding: 70px 0 0 0;
+
+}
+
+.header h1  {
+  color: white;
+  font-size: 5.2rem;
+}
+
+.header h3 {
+  font-size: 3rem;
+}
+
+.index h1 {
+  padding: 30px 0;
+  font-size: 2.8rem;
+}
+.index {
+  padding: 40px;
+  font-size: 1.1rem;
+}
+.testimonial h2 {
+  font-size: 2.5rem;
+}
+.testimonial p {
+  font-size: 1.3rem;
+}
+.blue li {
+  padding: 10px;
+  font-size: 1.2rem;
+}
+.contact h2 {
+  font-size: 2.8rem;
+  padding: 40px 0;
+}
+.info li {
+  line-height: 2.0rem;
+  font-size: 1.2rem;
+}
+
+.info h3{
+  font-size: 2.0rem;
+  padding-bottom: 30px;
+}
+
+.info h4 {
+    font-size: 1.5rem;
+    padding-bottom: 30px;
+}
+.padding h1 {
+  font-size: 2.8rem;
+}
+
+.team p {
+  font-size: 1.2rem;
+}
+.team {
+  padding: 90px 20px;
+}
+.teamtop {
+  padding: 10px 20px 90px 20px; 
+}
+.padding {
+  padding: 40px 20px;
+}
+}
+
+
 /*---------------------- MAIN --------------------------*/
 
 body {
@@ -9,13 +172,13 @@ body {
 .top {
   background: rgb(31, 40, 68);
   color: white;
-  font-size: 2.5rem; 
 }
 
 .raleway {
   font-family: "Raleway";
   letter-spacing: 0.2rem;
 }
+
 .poiret{
   letter-spacing: 0.25rem;
   font-family: "Poiret One", "cursive";
@@ -24,7 +187,6 @@ body {
 
 .top ul {
   list-style: none;
-  padding: 70px 0 0 0;
   margin: 0;
   text-align: right;
 }
@@ -40,10 +202,6 @@ body {
   background-position-y: 55%
 }
 
-.big{
-  font-size: 3rem;
-}
-
 .borderblack {
   border-bottom: 3px solid black;
 }
@@ -53,7 +211,7 @@ a {
 }
 
 
-/* NAV */
+/* ---------------------------- NAV -------------------------- */
 
 .navbar ul {
   list-style: none;
@@ -72,14 +230,6 @@ a {
 
 /*-------------------------- INDEX PAGE---------------------------- */
 
-.header h1  {
-  color: white;
-  font-size: 5.2rem;
-}
-
-.header h3 {
-  font-size: 3rem;
-}
 
 .header {
   background: url("../images/chicago.jpg") center;
@@ -94,30 +244,19 @@ a {
   padding: 14% 2%;
 }
 
-.index {
-  padding: 40px;
-  font-size: 1.1rem;
-}
-
-.index h1 {
-  padding: 30px 0;
-  font-size: 2.8rem;
-}
 
 .blue {
   background: rgb(31, 40, 68);
   color: white;
   text-align: center;
-  
 }
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.blue li {
-  padding: 10px;
-  font-size: 1.2rem;
-}
+
 .testimonial {
   border: 2px solid gray;
   border-radius: 10px;
@@ -125,13 +264,9 @@ ul {
   background: rgb(245, 245, 245);
 }
 
-.testimonial h2 {
-  font-size: 2.5rem;
-}
 
-.testimonial p {
-  font-size: 1.3rem;
-}
+
+
 
 .author {
   text-align: right;
@@ -154,31 +289,12 @@ ul {
   padding: 0;
   font-family: "Roboto";
 }
-.info li {
-  line-height: 2.0rem;
-  font-size: 1.2rem;
-}
-
-.info h3{
-  font-size: 2.0rem;
-  padding-bottom: 30px;
-}
-
-.info h4 {
-    font-size: 1.5rem;
-    padding-bottom: 30px;
-}
 
 .contact .card {
   color: black;
   margin-right: 20px;
   padding: 30px;
   font-family: "Roboto";
-}
-
-.contact h2 {
-  font-size: 2.8rem;
-  padding: 40px 0 0 0;
 }
 
 .card-title {
@@ -195,32 +311,15 @@ ul {
   font-size: 2.8rem;
 }
 
+.lawyer {
+  height: 100px;
+  background: url("../images/lawyer.jpg") fixed;
+  background-size: cover;
+}
+
 
 
 /*------------------------------ TEAM PAGE -----------------------------*/
-
-.team {
-  padding: 90px 20px;
-}
-
-
-.teamtop {
-  padding: 10px 20px 90px 20px; 
-}
-
-.team p {
-  font-size: 1.2rem;
-}
-
-.padding {
-  padding: 40px 20px;
-}
-
-.padding h1 {
-  font-size: 2.8rem;
-}
-
-
 
 
 
@@ -230,4 +329,5 @@ ul {
   background-color: #343a40;
   color: white;
 }
+
 
