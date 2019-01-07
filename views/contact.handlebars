@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./public/css/style.css">
  <link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Raleway" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 <body>
 
@@ -53,53 +54,64 @@
 {{!------------- MAIN -----------}}
 
 <div class="container-fluid contact">
-  <h2 class="raleway">Need Legal Assistance?</h2>
+  <h2 class="raleway">Contact Us</h2>
 </div>
 
 <div class="container-fluid contact">
   <div class="row">
-    <div class="col-md-4 info">
-        <div class="container">
-          <h3>Questions? </h3>
-          <h4>Contact Barbara Goodman Law!</h4>
-          <ul class="card-list">
-            <li class="card-list-item">Email: </li>
-            <li>barb@barbgoodmanlaw.com</li><br>
-            <li>Phone:</li>
-            <li>111-333-4444</li><br>
-            <li>Address:</li>
-            <li>111 main st, Deerfield IL 60068</li>
-          </ul>
+    <div class="col-md-12">
+      <p>If you need legal assistance, services, or simply have legal questions, contact Barb Goodman Law for a consultation. If we cannot provide that service, we can help you find someone who can!</p>
+    </div>
+    <div class="col-md-12 info">
+        <div class="icon">
+            <i class="fas fa-envelope"></i>
+            <h6>barb@barbgoodmanlaw.com</h6>
+        </div>
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+            <h6>847-317-0282</h6>
+          
+        </div>
+          <div class="icon">
+          <i class="fas fa-map-marked-alt"></i>
+          <h6>55 Skokie Blvd #250, Northbrook IL 60062</h6>
         </div>
     </div>
-    <div class="col-md-8">
-        <div class="container card mb-4">
+    
+    <div class="col-md-6 form">
+        <div class="container">
           <h1>Contact Us</h1>
-          <form action="/contact" method="POST" class="card-body">
+
+ <form action="/contact" method="POST">
             <div class="row">
-                <div class="form-group col-sm-6"> 
-                  <label>First Name</label>
-                  <input type="text" name="firstName" class="form-control" required>
+                <div class="charta"> 
+                  {{!-- <label>First Name</label> --}}
+                  <input placeholder="First Name" type="text" name="firstName" class="chart-control" required>
                 </div>
-                <div class="form-group col-sm-6"> 
-                  <label>Last Name</label>
-                  <input type="text" name="lastName" class="form-control" required>
+                <div class="chartb"> 
+                  {{!-- <label>Last Name</label> --}}
+                  <input placeholder="Last Name" type="text" name="lastName" class="chart-control" required>
                 </div>
-                <div class="form-group col-sm-12"> 
-                  <label>Email</label>
-                  <input type="email" name="email" class="form-control" required>
+                <div class="chart"> 
+                  {{!-- <label>Email</label> --}}
+                  <input placeholder="Email" type="email" name="email" class="chart-control" required>
                 </div>
-                <div class="form-group col-sm-12">
-                  <label>Message</label>
-                  <textarea name="message" cols="30" rows="10" class="form-control" required></textarea>
+                <div class="chart">
+                  {{!-- <label>Message</label> --}}
+                  <textarea name="message" cols="30" rows="10" class="chart-control" placeholder="Message" required></textarea>
                 </div>
-                <div class="form-group col-sm-12">
-                  <input type="submit" class="form-control" value="Submit">
+                <div class="chart">
+                  <input type="submit" class="chart-control" value="Submit">
               </div>  
             </div>  
           </form>
+
+        
         </div>
     </div> 
+    <div class="col-md-6 map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11833.355716386985!2d-87.80778450329366!3d42.14303351065109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880fc137ce774d11%3A0x61b6359d68d38fb2!2sBarb+Goodman+Law!5e0!3m2!1sen!2sus!4v1546716412544"  frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
   </div>
 </div>
 

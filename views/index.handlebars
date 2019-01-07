@@ -6,14 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="./public/css/style.css">
- <link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Raleway" rel="stylesheet"> 
+ <link href="https://fonts.googleapis.com/css?family=Poiret+One|Quicksand|Raleway|Orbitron" rel="stylesheet"> 
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
  </head>
 <body>
 
   <div class="container-fluid header">
-    <div class="container poiret">
-      <h1>Barbara Goodman Law</h1>
-      <h3>Real Estate Lawyer</h3>
+    <div class="container orbitron">
+      <h1>Barb Goodman Law</h1>
+      {{!-- <h3>Real Estate Lawyer</h3> --}}
+    </div>
+    <div class="container angle">
+            <a class="pagedown"><i class="fas fa-angle-down"></i></a>
     </div>
   </div>
 
@@ -43,23 +49,36 @@
 {{!-- MAIN --}}
 
 
-  <div class="container index">
+  <div class="container index" id="welcome">
     <div class="row">
-          <h1 class="raleway">About Your firm and Real Estate Law</h1>
+          <h1 class="raleway">About Your Firm</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab laborum iusto dolorum cupiditate. Veniam accusamus sunt autem eos. Numquam, quod aspernatur aliquam saepe hic excepturi exercitationem nobis iusto dolorem voluptate sed alias modi asperiores ex explicabo distinctio facere neque molestias earum inventore amet! Dolores esse iste repellendus earum perferendis ducimus ipsam omnis alias in odit, sunt iure delectus? Id, ducimus. Excepturi veritatis dignissimos eum, nobis tempora eos nam id inventore doloremque iusto, dolore facere natus maxime aliquam dolorem ab at molestiae. Voluptates, minima impedit itaque fuga sint placeat non accusamus voluptate cupiditate facere odit magnam architecto, quo soluta quaerat tenetur harum, hic dignissimos! Neque obcaecati blanditiis nisi consequuntur quaerat nulla autem enim officia! Officia adipisci quas veritatis non modi doloribus consectetur aperiam, optio reprehenderit eaque?.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis totam possimus corrupti? Nesciunt quo vel ullam reiciendis quam minima aliquam! Provident soluta sint hic iure autem. Voluptate, expedita voluptatem, consequatur ipsum alias vero quisquam, maxime quas consectetur numquam praesentium possimus.</p>
     </div>
   </div>
+
   <div class="container-fluid blue">
-    <div class="container index">
-          <h1 class="raleway">Services Basic Outline and Introduction</h1>
-          <ul>
+    {{!-- <div class="container index"> --}}
+          <h1 class="raleway">Areas of Focus</h1>
+          <div class="focus re">
+            <div class="focus-in">
+                <h1>Real Estae Law</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis cum voluptatem sunt totam voluptates itaque eius omnis nisi eveniet!</p>
+            </div>
+            </div><div class="focus el">
+              <div class="focus-in">
+                <h1>Election Law</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel animi autem, voluptate sed ab laborum temporibus cupiditate minima dicta quaerat.</p>
+              </div>
+            </div>
+
+          {{!-- <ul>
             <li>I do this</li>
             <li>and I also do this thing over here</li>
             <li>also this is something that I</li>
             <li>And did I mention.... I do this too!</li>
-          </ul>
-    </div>
+          </ul> --}}
+    {{!-- </div> --}}
      
   </div>
   <div class="container index">
@@ -110,5 +129,6 @@
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../public/style.js"></script>
 
 </html>
