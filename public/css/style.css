@@ -25,10 +25,6 @@
     padding: 15px 0;
     font-size: 1.4rem;
   }
-  .index {
-    padding: 20px;
-    font-size: 0.9rem;
-  }
   .testimonial h2 {
     font-size: 1.4rem;
   }
@@ -98,7 +94,7 @@
 }
 
 .top img{
-  width: 200px;
+  height: 120px;
   margin: 20px;
 }
 
@@ -176,6 +172,7 @@ body {
   background-color: white;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   font-size: 16px;
+  box-sizing: border-box;
 }
 .header {
   height: 90vh;
@@ -191,15 +188,41 @@ body {
 }
 .angle:hover {
   color: rgb(51, 62, 126);
- 
 }
-
 
 .top {
   background: rgb(31, 40, 68);
   color: white;
 }
-
+.image{
+  width: 50%
+}
+.head{
+  width:50%;
+  display: inline-flex;
+}
+.head-contact{
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.top button{
+  height: 70px;
+  width: 300px;
+  border: white solid 2px;
+  color: white;
+  font-size: 1.3rem;
+  background: transparent;
+  margin-left: 3%;
+  transition: all 0.3s ease;
+}
+.top button:hover{
+  background: white;
+  color: #1f2844;
+}
 .orbitron {
   font-family: "Orbitron";
   letter-spacing: 0.2rem;
@@ -224,7 +247,6 @@ body {
 
 .top h2 {
     margin-bottom: 0;
-    /* padding-top: 140px; */
 }
 
 .top .image {
@@ -264,7 +286,6 @@ a {
 
 .header {
   background: url("../images/chicago.jpg") center;
-  /* background: rgb(14, 19, 35); */
   background-size: cover;
   color: white;
   text-shadow: 1px 2px 4px black;
@@ -274,13 +295,23 @@ a {
   text-align: center;
   padding-top: 35vh;
 }
-
+.index {
+  max-width: 1500px;
+  width: 80%; 
+  margin: 0 10%;
+}
 
 .blue {
   background: #1f2844;
   color: white;
   text-align: center;
-  padding: 0;
+  padding: 0 0 50px 0;
+}
+
+.blue h1{
+  padding: 60px;
+  width: 50%;
+  margin: 0 auto;
 }
 
 ul {
@@ -294,6 +325,8 @@ ul {
   border-radius: 10px;
   box-shadow: 1px 1px 22px black;
   background: rgb(245, 245, 245);
+  height: 250px;
+  margin-top: 40px;
 }
 
 .author {
@@ -303,32 +336,21 @@ ul {
 .focus{
   width: 50%;
   display: inline-block;
-  height: 400px;
+  height: 600px;
 }
-
-.focus-in{
-  display: none;
+.angle1{
   width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.3);
-  transition: all 0.7s;
-  -webkit-transition: all 0.7s;
-  -moz-transition: all 0.7s; 
-}
-.focus:hover .focus-in{
-  display: table;
+  height: 0;
+  border-left: 100vw solid #1f2844;
+  border-bottom: 100px solid transparent; 
 }
 
-.re{
-  background: url("../images/re.jpg") center;
-  background-size: cover;
-  border-right: 1px solid white;
-}
-
-.el{
-  background: url("../images/el.jpg") center;
-  background-size: cover;
-  
+.angle2{
+  width: 100%;
+  height: 0;
+  /* border-left: 100vw solid #1f2844; */
+  border-right: 100vw solid #1f2844; 
+  border-top: 100px solid transparent;
 }
 
 
@@ -453,3 +475,79 @@ form {
 }
 
 
+/*----------------------EXTRA CRAP--------------------------*/
+
+.focus-in{
+  width: 80%;
+  height: 84%;
+  margin: 5% 10%;
+  background: transparent;
+  color: transparent;
+  padding: 10%;
+  position: relative;
+}
+
+.focus-in::before, .focus-in::after {
+  box-sizing: inherit;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%; 
+} 
+
+/* .focus-in:hover{
+    background: rgba(0,0,0,0.3);
+    color: white;
+} */
+
+.draw {
+  /* transition: all 1s ease 1s; */
+}
+.draw:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+  transition: color 1s ease;
+
+}
+.draw::before, .draw::after {
+  border: 2px solid transparent;
+  width: 0;
+  height: 0;
+}
+.draw::before {
+ top : 0;
+  left: 0;
+}
+.draw::after {
+  bottom: 0;
+  right: 0;
+}
+
+.draw:hover::before, .draw:hover::after {
+  width: 100%;
+  height: 100%;
+
+}
+.draw:hover::before {
+  border-top-color: #fff;
+  border-right-color: #fff;
+  transition: width 0.25s ease-out, height 0.25s ease-out .25s;
+}
+.draw:hover::after {
+  border-bottom-color: #fff;
+  border-left-color: #fff;
+  transition:  width 0.25s ease-out, height 0.25s ease-out .25s;
+}
+
+
+.re{
+  background: url("../images/re.jpg") center;
+  background-size: cover;
+  border-right: 1px solid white;
+}
+
+.el{
+  background: url("../images/el.jpg") center;
+  background-size: cover;
+  
+}
