@@ -14,17 +14,23 @@
 {{!-------------- HEADING -------------}}
 
 <div class="container-fluid top">
-  <div class="row">
-    <div class="col-sm-5">
-      <ul class="poiret">
-        <li>Law Offices Of</li>
-        <li>Barbara Goodman</li>
-      </ul>
-    </div>
-    <div class="col-sm-7 image">
+
+  <div class="head">
+        <div class="head-contact">
+           <img src="../public/images/bglwhite.png">
+        </div>
+  </div>
+  <div class="head-image">
+     <div class="image">
     </div>
   </div>
-</div>
+  
+    <div class="head">
+      <div class="head-contact">
+         <button class="contact-us">Contact Us</button>
+         </div>
+       </div>
+    </div>
 
 {{!------------- NAVIGATION -----------}}
 
@@ -44,6 +50,9 @@
       <li class="nav-item">
         <a class="nav-link" href="/services">Services</a>
       </li>
+            {{!-- <li class="nav-item">
+        <a class="nav-link" href="/philanthropy">Philanthropy</a>
+      </li> --}}
       <li class="nav-item active">
         <a class="nav-link" href="/contact">Contact</a>
       </li>
@@ -59,7 +68,7 @@
 
 <div class="container-fluid contact">
   <div class="row">
-    <div class="col-md-12">
+    <div class="contact1">
       <p>If you need legal assistance, services, or simply have legal questions, contact Barb Goodman Law for a consultation. If we cannot provide that service, we can help you find someone who can!</p>
     </div>
     <div class="col-md-12 info">
@@ -78,7 +87,7 @@
         </div>
     </div>
     
-    <div class="col-md-6 form">
+    <div class="col-md-6 form" id="form">
         <div class="container">
           <h1>Contact Us</h1>
 
@@ -140,5 +149,6 @@
 <script src="../node_modules/jquery/dist/jquery.js"></script>
 <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<script src="../public/style.js"></script>
 
 </html>

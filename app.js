@@ -33,6 +33,10 @@ app.get("/services", function(req, res){
     res.render("services");
 })
 
+app.get("/philanthropy", function(req, res){
+    res.render("phil");
+});
+
 //CONTACT
 app.get("/contact", function(req, res){
     res.render("contact");

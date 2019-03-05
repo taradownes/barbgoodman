@@ -1,29 +1,61 @@
-/*------------------------ MEDIA ----------------------------*/
+/*------------------- MEDIA --------------------*/
 
 @media screen and (max-width: 768px) {
 
+/* ----------main---------- */
   .top {
     font-size: 1.0rem;
+    height: 95px;
   }
-
   .top .image {
     display: none;
   }
-  
-  .top ul {
-    padding: 15px 0 0 0;
+  .head-image{
+    width: 1%;
   }
-
-  .header h1  {
-    color: white;
-    font-size: 1.9rem;
+  .head {
+    width: 48%;
   }
-  .header h3 {
-    font-size: 1.2rem;
+  .head-contact img{
+    height: 80px;
+  }
+  .top button{
+    font-size: 0.9rem;
+    margin: 3px;
+  }
+  /*--------- index------ */
+  .label{
+    width: 100%;
+  }
+  .header{
+    height: 80vh;
+  }
+  .pic{
+    width: 100%;
+  }
+  .label img{
+    width: 250px;
+  }
+  .label-con1{
+    width: 100%;
+    height: 50%;
+    display: flex
+  }
+  .label-con2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 50%;
+  }
+  #contact-us{
+    width: 100%;
+  }
+  .angle{
+    width: 100%;
   }
   .index h1 {
     padding: 15px 0;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .testimonial h2 {
     font-size: 1.4rem;
@@ -31,40 +63,28 @@
   .testimonial p {
     font-size: 0.9rem;
   }
-  .blue li {
-    padding: 5px;
-    font-size: 0.9rem;
+  .blue h1{
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.8rem;
   }
-  /* ---------CONTACT-------- */
-  .contact h2 {
-    font-size: 1.4rem;
-    padding: 10px 0 0 0;
+  .angle1{
+    border-bottom: 40px solid transparent; 
   }
-  .info li {
-    line-height: 1.4rem;
-    font-size: 0.9rem;
+  .angle2{
+    border-top: 40px solid transparent;
   }
-  
-  .info h3{
-    font-size: 1.2rem;
-    padding-bottom: 15px;
+  .focus{
+    width: 100%;
+    height: 400px;
   }
-  
-  .info h4 {
-      font-size: 1rem;
-      padding-bottom: 15px;
-  }
-  .card label {
-    font-size: 0.9 !important;
-  }
-  .card h1 {
-    font-size: 1.4 !important;
-  }
-  /* ----TEAM----- */
-  .padding h1 {
-    font-size: 1.5rem;
-  }
- .team p {
+/*------team--------*/
+
+.teamtop h2, .team h2 {
+  padding-top: 15px;
+}
+.team p {
   font-size: 0.9rem;
 }
 .teamtop p{
@@ -76,37 +96,114 @@
 .teamtop {
   padding: 10px 10px 40px 10px; 
 }
+  /*-------services-----------*/
+  .services img{
+    margin: 30px 0;
+  }
+  /* ---------contact-------- */
+  .contact h2 {
+    font-size: 1.9rem;
+    padding: 10px 0 0 0;
+  }
+  .contact{
+    margin-top: 25px;
+  }
+  .contact1{
+    width: 95%;
+  }
+  .info{
+    padding: 50px 10px;
+  }
+  .icon{
+    width: 90%;
+  }
+  .icon i{
+    font-size: 3rem;
+  }
+  .info li {
+    line-height: 1.4rem;
+    font-size: 0.9rem;
+  }
+  
+  .info h3{
+    font-size: 1.2rem;
+    padding-bottom: 15px;
+  }
+  .info h4 {
+      font-size: 1rem;
+      padding-bottom: 15px;
+  }
+  .map{
+    padding: 0 30px 30px 30px;
+  }
+  .iframe{
+    margin-top: 0;
+  }
+  .card label {
+    font-size: 0.9 !important;
+  }
+  .card h1 {
+    font-size: 1.4 !important;
+  }
+  .padding h1 {
+    font-size: 1.9rem;
+  }
 .padding {
   padding: 20px 10px;
 }
-  
+
 }
-
 @media screen and (min-width: 768px) {
-
+/* main */
 .top {
   font-size: 2.4rem;
+  height: 200px;
 }
-
 .top ul {
   padding: 20px 0 0 0;
-
 }
-
 .top img{
   height: 120px;
   margin: 20px;
 }
-
-.header h1  {
-  color: white;
-  font-size: 4.2rem;
+.head{
+  width:25%;
+}
+.head-image{
+  width: 50%;
 }
 
-.header h3 {
-  font-size: 2.5rem;
+/* index */
+.header{
+  height: 100vh;
+  min-height: 600px;
 }
-
+.label{
+  width: 100%
+}
+.pic{
+  width: 100%;
+}
+.label img{
+  width: 600px;
+}
+.label-con1{
+  width: 100%;
+  height: 60%;
+  display: flex
+}
+.label-con2{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  height: 40%;
+}
+#contact-us{
+  width: 42%;
+}
+.angle{
+  width: 42%;
+}
 .index h1 {
   padding: 30px 0;
   font-size: 2.8rem;
@@ -121,19 +218,45 @@
 .testimonial p {
   font-size: 1.3rem;
 }
-.blue li {
-  padding: 10px;
-  font-size: 1.2rem;
+.blue h1{
+  padding: 60px;
+  width: 50%;
+  margin: 0 auto;
 }
+.angle1{
+  border-bottom: 100px solid transparent; 
+}
+.angle2{
+  border-top: 100px solid transparent;
+}
+.focus{
+  width: 50%;
+  height: 600px;
+}
+/*---------services------------*/
+.services{
+  padding: 20px;
+}
+/*------- contact-------- */
 .contact h2 {
   font-size: 2.8rem;
   padding: 40px 0;
 }
-.info li {
-  line-height: 2.0rem;
-  font-size: 1.2rem;
+.contact{
+  margin-top: 50px;
 }
-
+.contact1{
+  width: 75%;
+}
+.info{
+  padding: 100px 10px;
+}
+.icon{
+  width: 32%;
+}
+.icon i{
+  font-size: 4rem;
+}
 .info h3{
   font-size: 2.0rem;
   padding-bottom: 30px;
@@ -142,6 +265,12 @@
 .info h4 {
     font-size: 1.5rem;
     padding-bottom: 30px;
+}
+.map{
+  padding: 70px 30px 60px 30px;
+}
+.iframe{
+  margin-top: 50px;
 }
 .padding h1 {
   font-size: 2.8rem;
@@ -162,52 +291,42 @@
 }
 
 
-/*---------------------- MAIN --------------------------*/
+/*------------------ MAIN --------------------------*/
 
 ::-webkit-scrollbar {
   display: none;
 }
-
 body {
   background-color: white;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   font-size: 16px;
   box-sizing: border-box;
 }
-.header {
-  height: 90vh;
-}
-.angle {
-  padding-top: 10vh !important;
-  font-size: 4rem;
-  color: white;
-  width: 100px;
-  transition: all 0.8s;
-  -webkit-transition: all 0.8s;
-  -moz-transition: all 0.8s;
-}
-.angle:hover {
-  color: rgb(51, 62, 126);
-}
-
 .top {
   background: rgb(31, 40, 68);
   color: white;
-}
-.image{
-  width: 50%
-}
-.head{
-  width:50%;
   display: inline-flex;
 }
+.image{
+  width: 100%
+}
+.head{
+  display: inline-flex;
+}
+.head-image{
+  display: flex;
+  justify-content: center;
+}
+button{
+  cursor: pointer;
+}
 .head-contact{
-  width: 50%;
+  width: 100%;
   height: 100%;
   display: inline-block;
   display: inline-flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
 }
 .top button{
   height: 70px;
@@ -222,6 +341,7 @@ body {
 .top button:hover{
   background: white;
   color: #1f2844;
+  cursor: pointer;
 }
 .orbitron {
   font-family: "Orbitron";
@@ -239,20 +359,11 @@ body {
   font-weight: 500;
 }
 
-.top ul {
-  list-style: none;
-  margin: 0;
-  text-align: right;
-}
-
-.top h2 {
-    margin-bottom: 0;
-}
-
 .top .image {
   background: url("../images/chicago.jpg");
   background-size: cover; 
-  background-position-y: 55%
+  background-position-y: 59%;
+  width: 80%;
 }
 
 .borderblack {
@@ -269,49 +380,91 @@ a {
 .navbar ul {
   list-style: none;
 }
-
 .navbar li {
   letter-spacing: 0.1rem;
   font-size: 1.1rem;
   padding: 0 0.8rem;
 }
 
-.mr-auto {
-  justify-content: end;
-}
-
 
 /*-------------------------- INDEX PAGE---------------------------- */
-
-
-.header {
-  background: url("../images/chicago.jpg") center;
-  background-size: cover;
-  color: white;
-  text-shadow: 1px 2px 4px black;
-}
-.header .container {
-  margin: 0 auto;
-  text-align: center;
-  padding-top: 35vh;
-}
 .index {
   max-width: 1500px;
   width: 80%; 
   margin: 0 10%;
 }
+.header {
+  color: white;
+  text-shadow: 1px 2px 4px black;
+  display: inline-flex;
+  padding: 0;
 
+}
+.pic{
+  background: url("../images/chicago.jpg") center;
+  background-size: cover;
+}
+.label img{
+  margin: auto auto 0 auto;
+}
+.label{
+  background: #1f2844;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+}
+
+#contact-us{
+  font-size: 1.3rem;
+  border: 2px white solid;
+  background: transparent;
+  transition: all 0.3s ease; 
+  height: 80px;
+  margin: auto 4%;
+}
+#contact-us:hover{
+  background: white;
+  border: white 2px solid;
+}
+.label button{
+  height: 100%;
+  width: 100%;
+  background: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+.label button:hover{
+  color: #1f2844;
+}
+.angle {
+  font-size: 3.3rem;
+  color: white;
+  text-align: center;
+  height: 80px;
+  cursor: pointer;
+  border: white solid 2px;
+  transition: all 0.3s;
+  margin: auto 4%;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+}
+.fa-angle-down{
+  cursor: pointer;
+}
+.angle:hover {
+  color: #1f2844;
+  background: white;
+  border: white solid 2px;
+  /* font-size: 4.2rem; */
+}
 .blue {
   background: #1f2844;
   color: white;
   text-align: center;
-  padding: 0 0 50px 0;
-}
-
-.blue h1{
-  padding: 60px;
-  width: 50%;
-  margin: 0 auto;
+  padding: 0 0 120px 0;
 }
 
 ul {
@@ -323,10 +476,11 @@ ul {
 .testimonial {
   border: 2px solid gray;
   border-radius: 10px;
-  box-shadow: 1px 1px 22px black;
-  background: rgb(245, 245, 245);
+  /* box-shadow: 1px 1px 22px black; */
+  background: rgb(255, 255, 255);
   height: 250px;
-  margin-top: 40px;
+  padding: 50px 50px;
+  margin: 90px auto !important;
 }
 
 .author {
@@ -334,15 +488,12 @@ ul {
 }
 
 .focus{
-  width: 50%;
   display: inline-block;
-  height: 600px;
 }
 .angle1{
   width: 100%;
   height: 0;
   border-left: 100vw solid #1f2844;
-  border-bottom: 100px solid transparent; 
 }
 
 .angle2{
@@ -350,132 +501,7 @@ ul {
   height: 0;
   /* border-left: 100vw solid #1f2844; */
   border-right: 100vw solid #1f2844; 
-  border-top: 100px solid transparent;
 }
-
-
-/* ------------------------CONTACT PAGE --------------------------*/
-
-.contact {
-  text-align: center;
-}
-.contact p{
-  font-size: 1.2rem;
-  padding: 0 60px;
-}
-.contact .info {
-  background: #fff;
-  color: #000000;
-  padding: 50px 10px;
-
-}
-.info {
-  text-align: center;
-}
-
-.info ul {
-  padding: 0;
-}
-
-.icon{
-  display: inline-block;
-  width: 33%;
-  color: rgb(31, 40, 68);
-}
-
-.icon i{
-  font-size: 4rem;
-  padding: 0 0 20px 0;
-}
-
-.contact .form{
-  color: #fff;
-  background: rgb(31, 40, 68);
-}
-
-input[type=submit]{
-  color: white;
-  background: transparent;
-  border: 3px solid rgb(114, 7, 7);
-  transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s; 
-  letter-spacing: 0.2rem;
-}
-
-input[type=submit]:hover{
-  background: transparent;
-  border: 3px solid rgb(214, 10, 10);
-}
-.map{
-  background: #1f2844;
-  padding: 30px;
-  width: 100%;
-}
-
-iframe{
-  width: 100%;
-  margin-top: 50px;
-  height: 450px;
-}
-
-form {
-  margin: 20px;
-}
-.form h1{
-  margin: 20px 0 0 0;
-  text-align: center;
-}
-
-.chart{
-  width: 100%;
-
-}
-.charta{
-  width: 49%;
-}
-.chartb{
-  width: 49%;
-  margin-left: 2%;
-}
-.chart-control{
-  width: 100%;
-  margin: 5px 0;
-  padding: 10px;
-}
-
-
-/* ------------------------------SERVICES PAGE-------------------------- */
-
-.services{
-  padding: 50px 20px;
-}
-
-.services h1 {
-  font-size: 2.8rem;
-}
-
-.lawyer {
-  height: 100px;
-  background: url("../images/lawyer.jpg") fixed;
-  background-size: cover;
-}
-
-
-
-/*------------------------------ TEAM PAGE -----------------------------*/
-
-
-
-/*------------------------------ FOOTER -------------------------*/
-.footer {
-  height: 80px;
-  background-color: #343a40;
-  color: white;
-}
-
-
-/*----------------------EXTRA CRAP--------------------------*/
 
 .focus-in{
   width: 80%;
@@ -486,7 +512,6 @@ form {
   padding: 10%;
   position: relative;
 }
-
 .focus-in::before, .focus-in::after {
   box-sizing: inherit;
   content: '';
@@ -494,15 +519,6 @@ form {
   width: 100%;
   height: 100%; 
 } 
-
-/* .focus-in:hover{
-    background: rgba(0,0,0,0.3);
-    color: white;
-} */
-
-.draw {
-  /* transition: all 1s ease 1s; */
-}
 .draw:hover {
   color: #fff;
   background: rgba(0,0,0,0.3);
@@ -522,11 +538,9 @@ form {
   bottom: 0;
   right: 0;
 }
-
 .draw:hover::before, .draw:hover::after {
   width: 100%;
   height: 100%;
-
 }
 .draw:hover::before {
   border-top-color: #fff;
@@ -538,16 +552,146 @@ form {
   border-left-color: #fff;
   transition:  width 0.25s ease-out, height 0.25s ease-out .25s;
 }
-
-
 .re{
   background: url("../images/re.jpg") center;
   background-size: cover;
   border-right: 1px solid white;
 }
-
 .el{
   background: url("../images/el.jpg") center;
   background-size: cover;
-  
+}
+
+/* ----------------------CONTACT PAGE ------------------------*/
+
+.contact {
+  text-align: center;
+}
+.contact p{
+  font-size: 1.4rem;
+  padding: 0;
+}
+.contact1{
+  margin: auto;
+}
+.contact .info {
+  background: #fff;
+  color: #000000;
+  text-align: center;
+}
+.icon{
+  display: inline-block;
+  color: rgb(31, 40, 68);
+}
+.icon i{
+  padding: 20px 0;
+}
+.icon h6{
+  font-size: 1.25rem;
+}
+.contact .form{
+  color: #fff;
+  background: rgb(31, 40, 68);
+  padding: 30px 0 60px 0;
+}
+input[type=text]{
+  background: white;
+  color: black;
+}
+input[type=email]{
+  background: white;
+  color: black;
+}
+textarea{
+  background: white;
+  color: black;
+}
+input[type=submit]{
+  color: white;
+  background: transparent;
+  border: 3px solid rgb(146, 8, 8);
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s; 
+  letter-spacing: 0.2rem;
+}
+
+input[type=submit]:hover{
+  background: transparent;
+  border: 3px solid rgb(214, 10, 10);
+}
+.map{
+  background: #1f2844;
+  width: 100%;
+}
+iframe{
+  width: 100%;
+  height: 450px;
+}
+form {
+  margin: 20px;
+}
+.form h1{
+  margin: 20px 0 0 0;
+  text-align: center;
+}
+.chart{
+  width: 100%;
+}
+.charta{
+  width: 49%;
+}
+.chartb{
+  width: 50%;
+  margin-left: 1%;
+}
+.chart-control{
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+}
+
+
+/* ------------------------SERVICES PAGE-------------------------- */
+
+.services h1 {
+  font-size: 2.8rem;
+}
+.lawyer {
+  height: 100px;
+  background: url("../images/lawyer.jpg") fixed;
+  background-size: cover;
+}
+
+/*---------------------- TEAM PAGE -----------------------------*/
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover{
+  color: inherit;
+  text-decoration: none;
+}
+
+/*---------------PHILANTHROPY------------------------*/
+
+#phil{
+  min-height: 65vh;
+}
+
+/*------------------------------ FOOTER -------------------------*/
+.footer {
+  height: 80px;
+  background-color: #343a40;
+  color: white;
+  display: inline-flex;
+}
+.footer-content{
+  width: 33.3%;
+  height: 100%;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center;
 }
