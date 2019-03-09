@@ -45,8 +45,6 @@ app.get("/contact", function(req, res){
 //TESTIMONIALS
 
 
-
-
 app.listen(process.env.PORT, process.env.IP, function(){
   console.log("server started");
 });
